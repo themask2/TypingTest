@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typing Test</title>
+    <script src="script_deny.js" async></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="masthead">
+        <h1>Check your typing skills</h1>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <p> This is a typing test. Your goal is to duplicate the text provided, EXACTLY, in the field below. The timer starts when you start typing and only stops when your text is identical to the original. Good luck! </p>
+        </section>
+        <!-- .intro -->
+        <section class="test-area">
+            <div id="origin-text">
+                <p>...</p>
+            </div>
+            <!-- #origin-text -->
+
+            <div class="test-wrapper">
+                <textarea id="text-area" name="textarea" rows="6" placeholder="The timer starts when you start typing..."
+                onpaste="return true" ondrop="return false" ></textarea>
+            </div>
+            <!-- .test-wrapper -->
+
+            <div class="meta">
+                <section id="clock">
+                    <div class="timer">00:00:00</div>
+                </section>
+
+                <button type="button" id="reset">RESET</button>
+            </div>
+            <!-- .meta -->
+        </section>
+        <!-- .test-area -->
+    </main>
+</body>
+
+</html>
